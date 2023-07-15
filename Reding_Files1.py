@@ -36,12 +36,4 @@ for line in myFile:
 
 
 
-
-
-
-
-
-
-
-
 My_Files.close() #close the file
