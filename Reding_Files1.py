@@ -8,9 +8,9 @@ print(My_Files.name)
 print(My_Files.mode)
 print(My_Files.encoding)
 
-#  -----------------------------------------------
-#  ------- /2/ File Handling => Read File ------------
-#  -----------------------------------------------
+#  ---------------------------------------------------------
+#  ---/ r / ---> /2/ File Handling => Read File ------------
+#  ---------------------------------------------------------
 
 My_Files = open("file","r") #file for mac / file.txt for windows
 
@@ -32,7 +32,10 @@ for line in myFile:
     if line.startswith("Islam he's from egypt"):
         break
 
-
+#r+ => You can read the file and also write to it ...
+#  ------------------------------------------------------------------------
+#  ---/ r+ / ---> /2/ File Handling => Read File & Write to it ------------
+#  ------------------------------------------------------------------------
 
 
 
