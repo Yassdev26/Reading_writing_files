@@ -37,6 +37,9 @@ for line in myFile:
 #  ---/ r+ / ---> /2/ File Handling => Read File & Write to it ------------
 #  ------------------------------------------------------------------------
 
+My_Files = open("write_r+","r+")
+print(My_Files.write("She is my mother."))
+My_Files.close()
 
 
 My_Files.close() #close the file
