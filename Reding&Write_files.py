@@ -36,10 +36,16 @@ for line in myFile:
 #  ------------------------------------------------------------------------
 #  ---/ r+ / ---> /2/ File Handling => Read File & Write to it ------------
 #  ------------------------------------------------------------------------
+#YOU CAN READ THE FILE AND ALSO WRITE TO IT ...
 
-My_Files = open("write_r+","r+")
+
+My_Files = open("file","r+")
 print(My_Files.write("She is my mother."))
-My_Files.close()
+
+#  --------------------------------------------------------------------------------------------------------------------
+#  ---/ w / ---> /2/ File Handling => Delete the things that were in a file & add the things you are going to write ---
+#  --------------------------------------------------------------------------------------------------------------------
+#DELETE THE THINGS THAT WERE IN A FILE & ADD THE THINGS YOU ARE GOING TO WRITE ...
 
 
 My_Files.close() #close the file
