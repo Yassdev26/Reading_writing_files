@@ -12,7 +12,7 @@ print(My_Files.encoding)
 #  ---/ r / ---> /2/ File Handling => Read File ------------
 #  ---------------------------------------------------------
 
-My_Files = open("file","r") #file for mac / file.txt for windows
+My_Files = open("Read","r") #file for mac / file.txt for windows
 
 print(My_Files.read())
 #readline / readlines
@@ -37,7 +37,7 @@ for line in myFile:
 #  ------------------------------------------------------------------------
 #YOU CAN READ THE FILE AND ALSO WRITE TO IT ...
 
-My_Files = open("file","r+")
+My_Files = open("Read","r+")
 print(My_Files.write("She is my mother."))
 
 
