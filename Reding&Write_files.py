@@ -29,7 +29,7 @@ print(type(My_Files.readlines()))
 # => I will give you example about for loops with reading files
 for line in myFile:
     print(line)
-    if line.startswith("Islam he's from egypt"):
+    if line.startswith("Tomorrow I will go to Morocco"):
         break
 
 #r+ => You can read the file and also write to it ...
@@ -59,7 +59,22 @@ print(My_Files.write("She is my mother."))
 
 
 My_Files = open("write","w+")
-print(My_Files.write("Don't be shy."))
+print(My_Files.write("The cat curled up on the cozy blanket and purred contentedly."))
 
+#  ---------------------------------------------------------------------------------------------------
+#  ---/ a / ---> /2/ File Handling => You can write to a file without deleting the previous write ----
+#  ---------------------------------------------------------------------------------------------------
+#YOU CAN WRITE TO A FILE WITHOUT DELETING THE PREVIOUS WRITE ...
+
+My_Files = open("write","a")
+print(My_Files.write("The sun rises in the east and sets in the west."))
+
+
+#  ---------------------------------------------------------------------------------------------------
+#  ---/ a+ / ---> /2/ File Handling => You can write to a file without deleting the previous write ----
+#  ---------------------------------------------------------------------------------------------------
+# a+ like  w / w+ / a / a+  ( You can write to a file without deleting the previous write ).
+My_Files = open("write","a")
+print(My_Files.write("I love the smell of freshly baked bread in the morning."))
 
 My_Files.close() #close the file
