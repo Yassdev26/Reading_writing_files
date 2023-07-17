@@ -48,4 +48,18 @@ print(My_Files.write("She is my mother."))
 #DELETE THE THINGS THAT WERE IN A FILE & ADD THE THINGS YOU ARE GOING TO WRITE ...
 
 
+My_Files = open("write","w")
+print(My_Files.write("She is my mother."))
+
+
+#  ---------------------------------------------------------------------------------------------------------------------
+#  ---/ w+ / ---> /2/ File Handling => Delete the things that were in a file & add the things you are going to write ---
+#  ---------------------------------------------------------------------------------------------------------------------
+#The difference between w and w + is that in w + a file can be created for you if you do not write any existing file, meaning when you write inside a file that does not exist on a project, it can be added while maintaining the same properties of w
+
+
+My_Files = open("write","w+")
+print(My_Files.write("Don't be shy."))
+
+
 My_Files.close() #close the file
